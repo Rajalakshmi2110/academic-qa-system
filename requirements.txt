@@ -7,3 +7,4 @@ tqdm
 sentence-transformers
 faiss-cpu
 numpy
+flask
