@@ -4,3 +4,6 @@ spacy
 nltk
 regex
 tqdm
+sentence-transformers
+faiss-cpu
+numpy
