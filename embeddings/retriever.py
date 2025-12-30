@@ -6,7 +6,7 @@ from sentence_transformers import SentenceTransformer
 class TextbookRetriever:
     def __init__(self):
         """Initialize retriever with pre-built index"""
-        self.model = SentenceTransformer("all-MiniLM-L6-v2")
+        self.model = SentenceTransformer("all-mpnet-base-v2")
         self.index = None
         self.metadata = None
         self.load_index()
@@ -14,9 +14,9 @@ class TextbookRetriever:
     def load_index(self):
         """Load FAISS index and metadata"""
         try:
-            self.index = faiss.read_index("data/textbook_index.faiss")
+            self.index = faiss.read_index("embeddings/data/textbook_index.faiss")
             
-            with open("data/textbook_metadata.json", "r", encoding="utf-8") as f:
+            with open("embeddings/data/textbook_metadata.json", "r", encoding="utf-8") as f:
                 self.metadata = json.load(f)
                 
             print(f"Loaded index with {len(self.metadata)} textbook chunks")
@@ -24,13 +24,33 @@ class TextbookRetriever:
         except FileNotFoundError:
             print("Index not found. Run build_index.py first.")
             
+    def preprocess_query(self, query):
+        """Enhance query for better matching"""
+        # Add context keywords for technical terms
+        enhancements = {
+            "tcp": "tcp transmission control protocol",
+            "handshake": "three way handshake connection establishment", 
+            "routing": "routing algorithm path selection",
+            "protocol": "network protocol communication"
+        }
+        
+        query_lower = query.lower()
+        for term, enhancement in enhancements.items():
+            if term in query_lower:
+                query = f"{query} {enhancement}"
+                
+        return query
+    
     def search(self, query, top_k=5, min_score=0.3):
         """Search for relevant textbook chunks"""
         if not self.index or not self.metadata:
             return []
             
+        # Preprocess query
+        enhanced_query = self.preprocess_query(query)
+        
         # Generate query embedding
-        query_embedding = self.model.encode([query])
+        query_embedding = self.model.encode([enhanced_query])
         faiss.normalize_L2(query_embedding)
         
         # Search FAISS index

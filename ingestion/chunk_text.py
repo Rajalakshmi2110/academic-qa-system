@@ -2,8 +2,8 @@ from nltk.tokenize import sent_tokenize
 import nltk
 nltk.download('punkt')
 
-MAX_TOKENS = 450
-OVERLAP = 40
+MAX_TOKENS = 250
+OVERLAP = 25
 
 def chunk_text(text):
     sentences = sent_tokenize(text)

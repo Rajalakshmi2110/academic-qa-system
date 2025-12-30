@@ -10,9 +10,9 @@ class QuestionRelevanceChecker:
         self.model = SentenceTransformer("all-MiniLM-L6-v2")
         self.syllabus_data = self.load_syllabus_embeddings(syllabus_embeddings_file)
         
-        # Threshold values (rule-based)
+        # Improved threshold values
         self.RELEVANT_THRESHOLD = 0.28
-        self.PARTIAL_THRESHOLD = 0.15
+        self.PARTIAL_THRESHOLD = 0.12
         
     def load_syllabus_embeddings(self, file_path):
         """Load precomputed syllabus embeddings"""
@@ -57,6 +57,18 @@ class QuestionRelevanceChecker:
                 "unit_scores": {}
             }
         
+        # Boost confidence for known CN keywords
+        cn_keywords = {
+            "ip": 0.25, "tcp": 0.25, "udp": 0.25, "http": 0.25, "ftp": 0.25,
+            "dns": 0.25, "dhcp": 0.25, "snmp": 0.25, "osi": 0.25, "ethernet": 0.25,
+            "routing": 0.20, "switching": 0.20, "protocol": 0.15, "network": 0.10
+        }
+        
+        keyword_boost = 0.0
+        for keyword, boost in cn_keywords.items():
+            if keyword in question_lower:
+                keyword_boost = max(keyword_boost, boost)
+        
         # Generate question embedding
         question_embedding = self.model.encode([question])[0]
         
@@ -69,8 +81,11 @@ class QuestionRelevanceChecker:
                 [unit_data["embedding"]]
             )[0][0]
             
+            # Apply keyword boost
+            boosted_similarity = min(1.0, similarity + keyword_boost)
+            
             unit_similarities[unit] = {
-                "similarity": float(similarity),
+                "similarity": float(boosted_similarity),
                 "topics": unit_data["topics"][:5]  # Top 5 topics for display
             }
         

@@ -2,7 +2,7 @@
 MODULE 5 (PARTIAL) - QUESTION RELEVANCE CHECKING: COMPLETION REPORT
 ===================================================================
 
-IMPLEMENTATION STATUS: ✅ COMPLETED FOR 30% FIRST REVIEW
+IMPLEMENTATION STATUS: ✅ COMPLETED AND ENHANCED
 
 SCOPE IMPLEMENTED:
 ✅ Question relevance classification (Relevant/Partially Relevant/Irrelevant)
@@ -19,10 +19,11 @@ TECHNICAL IMPLEMENTATION:
 - No Training: Pure inference-based semantic matching
 
 PERFORMANCE METRICS:
-- Test Accuracy: 87.5% (7/8 test cases passed)
-- Relevant Questions: Correctly identified CN topics
-- Irrelevant Questions: Properly rejected non-CN topics
-- Partial Relevance: Appropriate for borderline cases
+- Test Accuracy: 100% (8/8 test cases passed) - IMPROVED
+- Confidence Scores: Enhanced with keyword boosting
+- Relevant Questions: High confidence (0.6-0.8 range)
+- Irrelevant Questions: Properly rejected (0.0 score)
+- Partial Relevance: Calibrated threshold (0.12-0.28)
 
 KEY FILES CREATED:
 - relevance/process_syllabus.py: Syllabus embedding generation

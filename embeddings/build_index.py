@@ -6,22 +6,22 @@ import os
 from tqdm import tqdm
 
 class TextbookEmbedder:
-    def __init__(self, model_name="all-MiniLM-L6-v2"):
-        """Initialize with Sentence-BERT model"""
+    def __init__(self, model_name="all-mpnet-base-v2"):
+        """Initialize with better Sentence-BERT model"""
         self.model = SentenceTransformer(model_name)
-        self.dimension = 384  # all-MiniLM-L6-v2 embedding dimension
+        self.dimension = 768  # all-mpnet-base-v2 embedding dimension
         
     def load_textbook_chunks(self):
         """Load only textbook chunks (highest priority)"""
         textbook_chunks = []
         
         # Load Stallings (primary textbook)
-        with open("../data/processed/chunks/textbooks/stallings.json", "r", encoding="utf-8") as f:
+        with open("data/processed/chunks/textbooks/stallings.json", "r", encoding="utf-8") as f:
             stallings = json.load(f)
             textbook_chunks.extend(stallings)
             
         # Load Kurose (secondary textbook)  
-        with open("../data/processed/chunks/textbooks/kurose.json", "r", encoding="utf-8") as f:
+        with open("data/processed/chunks/textbooks/kurose.json", "r", encoding="utf-8") as f:
             kurose = json.load(f)
             textbook_chunks.extend(kurose)
             
