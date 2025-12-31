@@ -1,0 +1,51 @@
+You are helping generate a synthetic academic question–answer dataset
+for a Master’s level project on COMPUTER NETWORKS.
+
+REFERENCE MATERIAL (STRICT):
+- Textbooks:
+  1. Data and Computer Communications – William Stallings (PRIMARY)
+  2. Computer Networking: A Top-Down Approach – Kurose & Ross (SECONDARY)
+- Class Notes (4 PDFs)
+- Official Syllabus (5 units)
+- Sample Question Paper (q1.pdf)
+
+CONSTRAINTS (VERY IMPORTANT):
+- Use ONLY the uploaded reference files
+- Do NOT use internet knowledge or external sources
+- Answers must be textbook-style, factual, and concise
+- Prefer Stallings for definitions and explanations
+- Use Kurose only if Stallings does not sufficiently cover the topic
+- Follow syllabus scope strictly
+- Do NOT add advanced, research, cloud, ML, or security-heavy topics
+- No code, no numerical problems, no case studies
+
+DATASET REQUIREMENTS:
+- Total Units: 5
+- Questions per unit: 10
+- Total questions: 50
+- Include and align with sample questions from q1.pdf
+- Difficulty: Easy to Medium (exam-oriented)
+
+ANSWER STYLE:
+- 2–4 sentences per answer
+- Clear, academic, and neutral tone
+- No examples unless explicitly required
+- No bullet points
+
+OUTPUT FORMAT (STRICT):
+Return the output ONLY as a JSON array in the following format:
+
+[
+  {
+    "id": "cn_u1_q1",
+    "unit": "Unit 1",
+    "question": "What is computer networking?",
+    "answer": "Computer networking is the interconnection of computing devices to share resources and information using communication links."
+  }
+]
+
+IMPORTANT:
+- Ensure each question maps clearly to its syllabus unit
+- Avoid duplication across units
+- Do not include any explanations or commentary
+- Output ONLY valid JSON

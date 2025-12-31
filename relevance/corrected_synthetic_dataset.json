@@ -1,0 +1,664 @@
+[
+  {
+    "id": "cn_u1_q1",
+    "question": "What are the primary components of a data communications system?",
+    "expected_unit": "Unit 1",
+    "predicted_unit": "Unit 1",
+    "final_unit": "Unit 1",
+    "related_units": [
+      "Unit 1"
+    ],
+    "confidence": 0.42786345705249484,
+    "correction_applied": false,
+    "correction_reason": ""
+  },
+  {
+    "id": "cn_u1_q2",
+    "question": "Compare the functionality of a hub and a switch in relation to collision domains and network performance.",
+    "expected_unit": "Unit 1",
+    "predicted_unit": "Unit 1",
+    "final_unit": "Unit 2",
+    "related_units": [
+      "Unit 1"
+    ],
+    "confidence": 0.43520598655461185,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['switch', 'hub', 'collision domain']"
+  },
+  {
+    "id": "cn_u1_q3",
+    "question": "State the reason for the reduced number of layers in the TCP/IP model compared with the OSI model.",
+    "expected_unit": "Unit 1",
+    "predicted_unit": "Unit 1",
+    "final_unit": "Unit 1",
+    "related_units": [
+      "Unit 1"
+    ],
+    "confidence": 0.8030767437836006,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['osi model', 'tcp/ip model']"
+  },
+  {
+    "id": "cn_u1_q4",
+    "question": "What is the fundamental difference between a router and a gateway?",
+    "expected_unit": "Unit 1",
+    "predicted_unit": "Unit 1",
+    "final_unit": "Unit 3",
+    "related_units": [
+      "Unit 1",
+      "Unit 3"
+    ],
+    "confidence": 0.30173552747221305,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['router']"
+  },
+  {
+    "id": "cn_u1_q5",
+    "question": "Explain why the transport layer and network layer cannot be combined into a single layer.",
+    "expected_unit": "Unit 1",
+    "predicted_unit": "Unit 4",
+    "final_unit": "Unit 4",
+    "related_units": [
+      "Unit 1",
+      "Unit 4"
+    ],
+    "confidence": 0.4261562959392745,
+    "correction_applied": false,
+    "correction_reason": ""
+  },
+  {
+    "id": "cn_u1_q6",
+    "question": "Distinguish between a host and an end system in a network.",
+    "expected_unit": "Unit 1",
+    "predicted_unit": "Unit 1",
+    "final_unit": "Unit 1",
+    "related_units": [
+      "Unit 1"
+    ],
+    "confidence": 0.5006790240730962,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['host', 'end system']"
+  },
+  {
+    "id": "cn_u1_q7",
+    "question": "How do switched networks differ from broadcast networks?",
+    "expected_unit": "Unit 1",
+    "predicted_unit": "Unit 1",
+    "final_unit": "Unit 1",
+    "related_units": [
+      "Unit 1"
+    ],
+    "confidence": 0.42255407389263544,
+    "correction_applied": false,
+    "correction_reason": ""
+  },
+  {
+    "id": "cn_u1_q8",
+    "question": "What are the distinct roles of edge and core networks?",
+    "expected_unit": "Unit 1",
+    "predicted_unit": "Unit 1",
+    "final_unit": "Unit 1",
+    "related_units": [
+      "Unit 1"
+    ],
+    "confidence": 0.37636652746499377,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['core network']"
+  },
+  {
+    "id": "cn_u1_q9",
+    "question": "Define the function of the presentation layer in the OSI model.",
+    "expected_unit": "Unit 1",
+    "predicted_unit": "Unit 1",
+    "final_unit": "Unit 1",
+    "related_units": [
+      "Unit 1"
+    ],
+    "confidence": 0.6385974541189119,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['osi model', 'presentation layer']"
+  },
+  {
+    "id": "cn_u1_q10",
+    "question": "What is the primary objective of a protocol architecture?",
+    "expected_unit": "Unit 1",
+    "predicted_unit": "Unit 1",
+    "final_unit": "Unit 1",
+    "related_units": [
+      "Unit 1"
+    ],
+    "confidence": 0.577551577457422,
+    "correction_applied": false,
+    "correction_reason": ""
+  },
+  {
+    "id": "cn_u2_q1",
+    "question": "What is the main difference between fiber optic cables and twisted pair cables in terms of data transmission?",
+    "expected_unit": "Unit 2",
+    "predicted_unit": "Unit 4",
+    "final_unit": "Unit 2",
+    "related_units": [
+      "Unit 4"
+    ],
+    "confidence": 0.2310768640253785,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['fiber optic', 'twisted pair']"
+  },
+  {
+    "id": "cn_u2_q2",
+    "question": "Why is CSMA/CD not suitable for wireless ad hoc networks?",
+    "expected_unit": "Unit 2",
+    "predicted_unit": "Unit 2",
+    "final_unit": "Unit 2",
+    "related_units": [
+      "Unit 2"
+    ],
+    "confidence": 0.6298039101244713,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['csma/cd', 'wireless']"
+  },
+  {
+    "id": "cn_u2_q3",
+    "question": "Explain why the IEEE 802.11 frame uses four address fields.",
+    "expected_unit": "Unit 2",
+    "predicted_unit": "Unit 2",
+    "final_unit": "Unit 2",
+    "related_units": [
+      "Unit 2"
+    ],
+    "confidence": 0.2808289001348041,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['802.11']"
+  },
+  {
+    "id": "cn_u2_q4",
+    "question": "Distinguish between the Logical Link Control (LLC) and Media Access Control (MAC) sublayers of the Data Link Layer.",
+    "expected_unit": "Unit 2",
+    "predicted_unit": "Unit 2",
+    "final_unit": "Unit 2",
+    "related_units": [
+      "Unit 2"
+    ],
+    "confidence": 0.4953421046276719,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['llc', 'media access']"
+  },
+  {
+    "id": "cn_u2_q5",
+    "question": "Define the stop-and-wait flow control mechanism.",
+    "expected_unit": "Unit 2",
+    "predicted_unit": "Unit 4",
+    "final_unit": "Unit 2",
+    "related_units": [
+      "Unit 4",
+      "Unit 2"
+    ],
+    "confidence": 0.32301708193515916,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['stop-and-wait', 'flow control']"
+  },
+  {
+    "id": "cn_u2_q6",
+    "question": "What is the purpose of bit stuffing in data link protocols?",
+    "expected_unit": "Unit 2",
+    "predicted_unit": "Unit 4",
+    "final_unit": "Unit 4",
+    "related_units": [
+      "Unit 4"
+    ],
+    "confidence": 0.4555502747794644,
+    "correction_applied": false,
+    "correction_reason": ""
+  },
+  {
+    "id": "cn_u2_q7",
+    "question": "How does a Cyclic Redundancy Check (CRC) identify transmission errors?",
+    "expected_unit": "Unit 2",
+    "predicted_unit": "Unit 2",
+    "final_unit": "Unit 2",
+    "related_units": [
+      "Unit 2"
+    ],
+    "confidence": 0.28309388511980416,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['crc']"
+  },
+  {
+    "id": "cn_u2_q8",
+    "question": "What is the significance of the Hamming distance in error correction?",
+    "expected_unit": "Unit 2",
+    "predicted_unit": "Unit 2",
+    "final_unit": "Unit 2",
+    "related_units": [
+      "Unit 2"
+    ],
+    "confidence": 0.15038596934180556,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['hamming distance']"
+  },
+  {
+    "id": "cn_u2_q9",
+    "question": "Describe the basic operation of a Token Ring protocol.",
+    "expected_unit": "Unit 2",
+    "predicted_unit": "Unit 4",
+    "final_unit": "Unit 4",
+    "related_units": [
+      "Unit 4"
+    ],
+    "confidence": 0.4138315503003599,
+    "correction_applied": false,
+    "correction_reason": ""
+  },
+  {
+    "id": "cn_u2_q10",
+    "question": "What is a Virtual Local Area Network (VLAN) and its primary benefit?",
+    "expected_unit": "Unit 2",
+    "predicted_unit": "Unit 2",
+    "final_unit": "Unit 2",
+    "related_units": [
+      "Unit 2"
+    ],
+    "confidence": 0.3543140352009294,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['vlan']"
+  },
+  {
+    "id": "cn_u3_q1",
+    "question": "Why is the IPv6 header size not increased proportionately with the rate of increase of its address bits compared with IPv4?",
+    "expected_unit": "Unit 3",
+    "predicted_unit": "Unit 3",
+    "final_unit": "Unit 3",
+    "related_units": [
+      "Unit 3"
+    ],
+    "confidence": 0.5824909411995204,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['ipv4', 'ipv6', 'nat']"
+  },
+  {
+    "id": "cn_u3_q2",
+    "question": "Define Network Address Translation (NAT) and its primary purpose.",
+    "expected_unit": "Unit 3",
+    "predicted_unit": "Unit 1",
+    "final_unit": "Unit 1",
+    "related_units": [
+      "Unit 1"
+    ],
+    "confidence": 0.45845987983562253,
+    "correction_applied": false,
+    "correction_reason": ""
+  },
+  {
+    "id": "cn_u3_q3",
+    "question": "Explain how tunneling is used in the transition from IPv4 to IPv6.",
+    "expected_unit": "Unit 3",
+    "predicted_unit": "Unit 3",
+    "final_unit": "Unit 3",
+    "related_units": [
+      "Unit 3"
+    ],
+    "confidence": 0.58906874097493,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['ipv4', 'ipv6', 'tunneling']"
+  },
+  {
+    "id": "cn_u3_q4",
+    "question": "Compare datagram switching and virtual circuit switching in terms of routing.",
+    "expected_unit": "Unit 3",
+    "predicted_unit": "Unit 1",
+    "final_unit": "Unit 3",
+    "related_units": [
+      "Unit 1",
+      "Unit 3"
+    ],
+    "confidence": 0.5600327646339704,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['routing', 'datagram', 'virtual circuit']"
+  },
+  {
+    "id": "cn_u3_q5",
+    "question": "What is the role of the Internet Control Message Protocol (ICMP)?",
+    "expected_unit": "Unit 3",
+    "predicted_unit": "Unit 1",
+    "final_unit": "Unit 1",
+    "related_units": [
+      "Unit 1"
+    ],
+    "confidence": 0.5290208028141807,
+    "correction_applied": false,
+    "correction_reason": ""
+  },
+  {
+    "id": "cn_u3_q6",
+    "question": "Distinguish between Link-State and Distance-Vector routing algorithms.",
+    "expected_unit": "Unit 3",
+    "predicted_unit": "Unit 3",
+    "final_unit": "Unit 3",
+    "related_units": [
+      "Unit 3"
+    ],
+    "confidence": 0.6398598483766813,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['routing', 'link-state', 'distance-vector']"
+  },
+  {
+    "id": "cn_u3_q7",
+    "question": "What is the primary function of the Border Gateway Protocol (BGP)?",
+    "expected_unit": "Unit 3",
+    "predicted_unit": "Unit 3",
+    "final_unit": "Unit 3",
+    "related_units": [
+      "Unit 1",
+      "Unit 3"
+    ],
+    "confidence": 0.46415220236796695,
+    "correction_applied": false,
+    "correction_reason": ""
+  },
+  {
+    "id": "cn_u3_q8",
+    "question": "Explain the benefit of Classless Inter-Domain Routing (CIDR).",
+    "expected_unit": "Unit 3",
+    "predicted_unit": "Unit 3",
+    "final_unit": "Unit 3",
+    "related_units": [
+      "Unit 3"
+    ],
+    "confidence": 0.49353893484202244,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['routing', 'cidr']"
+  },
+  {
+    "id": "cn_u3_q9",
+    "question": "Describe the workflow of the Dynamic Host Configuration Protocol (DHCP).",
+    "expected_unit": "Unit 3",
+    "predicted_unit": "Unit 1",
+    "final_unit": "Unit 1",
+    "related_units": [
+      "Unit 1"
+    ],
+    "confidence": 0.6603350179934081,
+    "correction_applied": false,
+    "correction_reason": ""
+  },
+  {
+    "id": "cn_u3_q10",
+    "question": "What is a subnet mask and how is it used in IP addressing?",
+    "expected_unit": "Unit 3",
+    "predicted_unit": "Unit 3",
+    "final_unit": "Unit 3",
+    "related_units": [
+      "Unit 3",
+      "Unit 4"
+    ],
+    "confidence": 0.5150074287578813,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['ip address', 'subnet']"
+  },
+  {
+    "id": "cn_u4_q1",
+    "question": "State the functionality of UDP at the receiver host.",
+    "expected_unit": "Unit 4",
+    "predicted_unit": "Unit 4",
+    "final_unit": "Unit 4",
+    "related_units": [
+      "Unit 4"
+    ],
+    "confidence": 0.701754989124585,
+    "correction_applied": false,
+    "correction_reason": ""
+  },
+  {
+    "id": "cn_u4_q2",
+    "question": "How does TCP ensure reliability with an unreliable lower layer service?",
+    "expected_unit": "Unit 4",
+    "predicted_unit": "Unit 4",
+    "final_unit": "Unit 4",
+    "related_units": [
+      "Unit 4",
+      "Unit 2"
+    ],
+    "confidence": 0.6477591374262133,
+    "correction_applied": false,
+    "correction_reason": ""
+  },
+  {
+    "id": "cn_u4_q3",
+    "question": "Why does the File Transfer Protocol (FTP) use two separate port numbers?",
+    "expected_unit": "Unit 4",
+    "predicted_unit": "Unit 4",
+    "final_unit": "Unit 4",
+    "related_units": [
+      "Unit 4"
+    ],
+    "confidence": 0.753330132732089,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['ftp', 'port', 'file transfer']"
+  },
+  {
+    "id": "cn_u4_q4",
+    "question": "Why is HTTP designed as a stateless protocol and how can state information be added?",
+    "expected_unit": "Unit 4",
+    "predicted_unit": "Unit 4",
+    "final_unit": "Unit 4",
+    "related_units": [
+      "Unit 4"
+    ],
+    "confidence": 0.5213915158260853,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['http', 'stateless']"
+  },
+  {
+    "id": "cn_u4_q5",
+    "question": "What is the primary difference between TCP and UDP segment headers?",
+    "expected_unit": "Unit 4",
+    "predicted_unit": "Unit 4",
+    "final_unit": "Unit 4",
+    "related_units": [
+      "Unit 4"
+    ],
+    "confidence": 0.707300851373377,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['tcp', 'udp']"
+  },
+  {
+    "id": "cn_u4_q6",
+    "question": "Describe the three-way handshake process for TCP connection establishment.",
+    "expected_unit": "Unit 4",
+    "predicted_unit": "Unit 4",
+    "final_unit": "Unit 4",
+    "related_units": [
+      "Unit 4"
+    ],
+    "confidence": 0.7492195416129537,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['tcp', 'three-way handshake', 'connection']"
+  },
+  {
+    "id": "cn_u4_q7",
+    "question": "Explain the concept of name resolution in the Domain Name System (DNS).",
+    "expected_unit": "Unit 4",
+    "predicted_unit": "Unit 4",
+    "final_unit": "Unit 4",
+    "related_units": [
+      "Unit 4"
+    ],
+    "confidence": 0.4625647904890425,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['dns', 'name resolution']"
+  },
+  {
+    "id": "cn_u4_q8",
+    "question": "How does the TCP congestion control mechanism respond to a detected timeout?",
+    "expected_unit": "Unit 4",
+    "predicted_unit": "Unit 4",
+    "final_unit": "Unit 4",
+    "related_units": [
+      "Unit 4"
+    ],
+    "confidence": 0.6609482284605539,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['tcp', 'congestion control']"
+  },
+  {
+    "id": "cn_u4_q9",
+    "question": "What is the role of the Multi-Purpose Internet Mail Extension (MIME) in electronic mail?",
+    "expected_unit": "Unit 4",
+    "predicted_unit": "Unit 4",
+    "final_unit": "Unit 4",
+    "related_units": [
+      "Unit 4"
+    ],
+    "confidence": 0.19039408175932568,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['mime']"
+  },
+  {
+    "id": "cn_u4_q10",
+    "question": "Define the term 'socket' in the context of network applications.",
+    "expected_unit": "Unit 4",
+    "predicted_unit": "Unit 4",
+    "final_unit": "Unit 4",
+    "related_units": [
+      "Unit 4"
+    ],
+    "confidence": 0.5251619638233019,
+    "correction_applied": false,
+    "correction_reason": ""
+  },
+  {
+    "id": "cn_u5_q1",
+    "question": "State the significance of the Structure of Management Information (SMI) in network management.",
+    "expected_unit": "Unit 5",
+    "predicted_unit": "Unit 1",
+    "final_unit": "Unit 5",
+    "related_units": [
+      "Unit 1",
+      "Unit 5"
+    ],
+    "confidence": 0.4861094955975229,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['smi', 'network management']"
+  },
+  {
+    "id": "cn_u5_q2",
+    "question": "What is the role of the Management Information Base (MIB) in network management?",
+    "expected_unit": "Unit 5",
+    "predicted_unit": "Unit 5",
+    "final_unit": "Unit 5",
+    "related_units": [
+      "Unit 1",
+      "Unit 5"
+    ],
+    "confidence": 0.5556891141679423,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['mib', 'network management']"
+  },
+  {
+    "id": "cn_u5_q3",
+    "question": "Compare a traditional switch with an SDN-enabled switch in terms of handling forwarding decisions.",
+    "expected_unit": "Unit 5",
+    "predicted_unit": "Unit 1",
+    "final_unit": "Unit 1",
+    "related_units": [
+      "Unit 1"
+    ],
+    "confidence": 0.40227620164804506,
+    "correction_applied": false,
+    "correction_reason": ""
+  },
+  {
+    "id": "cn_u5_q4",
+    "question": "List some open source tools used for network monitoring and management.",
+    "expected_unit": "Unit 5",
+    "predicted_unit": "Unit 5",
+    "final_unit": "Unit 5",
+    "related_units": [
+      "Unit 5"
+    ],
+    "confidence": 0.5209640373297326,
+    "correction_applied": false,
+    "correction_reason": ""
+  },
+  {
+    "id": "cn_u5_q5",
+    "question": "What are the key components of the SNMP network management framework?",
+    "expected_unit": "Unit 5",
+    "predicted_unit": "Unit 5",
+    "final_unit": "Unit 5",
+    "related_units": [
+      "Unit 1",
+      "Unit 5"
+    ],
+    "confidence": 0.8003256028406913,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['snmp', 'network management']"
+  },
+  {
+    "id": "cn_u5_q6",
+    "question": "Explain the purpose of an SNMP trap message.",
+    "expected_unit": "Unit 5",
+    "predicted_unit": "Unit 5",
+    "final_unit": "Unit 5",
+    "related_units": [
+      "Unit 5"
+    ],
+    "confidence": 0.608900565675462,
+    "correction_applied": false,
+    "correction_reason": ""
+  },
+  {
+    "id": "cn_u5_q7",
+    "question": "Describe the relationship between the NETCONF protocol and the YANG data modeling language.",
+    "expected_unit": "Unit 5",
+    "predicted_unit": "Unit 1",
+    "final_unit": "Unit 5",
+    "related_units": [
+      "Unit 1"
+    ],
+    "confidence": 0.639837745087577,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['netconf', 'yang']"
+  },
+  {
+    "id": "cn_u5_q8",
+    "question": "What is the function of the 'northbound' API in an SDN controller?",
+    "expected_unit": "Unit 5",
+    "predicted_unit": "Unit 5",
+    "final_unit": "Unit 5",
+    "related_units": [
+      "Unit 5"
+    ],
+    "confidence": 0.3390251213148098,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['sdn', 'controller']"
+  },
+  {
+    "id": "cn_u5_q9",
+    "question": "How does the Wireshark tool facilitate network management and analysis?",
+    "expected_unit": "Unit 5",
+    "predicted_unit": "Unit 5",
+    "final_unit": "Unit 5",
+    "related_units": [
+      "Unit 1",
+      "Unit 5"
+    ],
+    "confidence": 0.5122743608775661,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['network management', 'wireshark']"
+  },
+  {
+    "id": "cn_u5_q10",
+    "question": "What is fault management in the context of network management?",
+    "expected_unit": "Unit 5",
+    "predicted_unit": "Unit 5",
+    "final_unit": "Unit 5",
+    "related_units": [
+      "Unit 1",
+      "Unit 5"
+    ],
+    "confidence": 0.4727353425503391,
+    "correction_applied": true,
+    "correction_reason": "Keyword override: ['network management', 'fault management']"
+  }
+]

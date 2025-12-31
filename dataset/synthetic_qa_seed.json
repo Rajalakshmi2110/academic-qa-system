@@ -1,0 +1,302 @@
+[
+  {
+    "id": "cn_u1_q1",
+    "unit": "Unit 1",
+    "question": "What are the primary components of a data communications system?",
+    "answer": "A data communications system is composed of five basic elements: the message, the sender, the transmitter, the receiver, and the destination. The transmitter encodes the message into a signal suitable for the transmission system, while the receiver converts the arriving signal back into a form usable by the destination device."
+  },
+  {
+    "id": "cn_u1_q2",
+    "unit": "Unit 1",
+    "question": "Compare the functionality of a hub and a switch in relation to collision domains and network performance.",
+    "answer": "A hub acts as a physical-layer device that broadcasts incoming signals to all outgoing ports, meaning all attached devices share a single collision domain and total bandwidth. In contrast, a switch operates at the data link layer and uses MAC addresses to forward frames to specific ports, effectively isolating collision domains and improving overall network performance."
+  },
+  {
+    "id": "cn_u1_q3",
+    "unit": "Unit 1",
+    "question": "State the reason for the reduced number of layers in the TCP/IP model compared with the OSI model.",
+    "answer": "The TCP/IP model is more practical and grouped several OSI layers into broader categories to reflect actual protocol implementations used on the Internet. Specifically, it combines the OSI's session, presentation, and application layers into a single application layer, and merges the physical and data link layers into a network access or link layer."
+  },
+  {
+    "id": "cn_u1_q4",
+    "unit": "Unit 1",
+    "question": "What is the fundamental difference between a router and a gateway?",
+    "answer": "A router operates at the network layer and is responsible for forwarding data between different networks based on IP addresses. A gateway is a more complex device that connects networks using different protocols, performing high-level translation of data from one protocol architecture to another."
+  },
+  {
+    "id": "cn_u1_q5",
+    "unit": "Unit 1",
+    "question": "Explain why the transport layer and network layer cannot be combined into a single layer.",
+    "answer": "The network layer is responsible for the end-to-end delivery of packets across multiple networks, while the transport layer handles process-to-process communication and ensures the reliability of data delivery for applications. Separating them allows the transport layer to provide a uniform interface to applications regardless of the diverse and changing underlying network technologies."
+  },
+  {
+    "id": "cn_u1_q6",
+    "unit": "Unit 1",
+    "question": "Distinguish between a host and an end system in a network.",
+    "answer": "In computer networking jargon, the terms host and end system are often used interchangeably to describe devices that connect to the Internet and run application programs. These devices sit at the edge of the network and include traditional hardware like PCs as well as non-traditional devices like smartphones and IoT sensors."
+  },
+  {
+    "id": "cn_u1_q7",
+    "unit": "Unit 1",
+    "question": "How do switched networks differ from broadcast networks?",
+    "answer": "Switched networks utilize devices like switches to route data only to its intended recipient based on hardware addresses, ensuring efficient bandwidth usage. Broadcast networks send data packets to all devices on a network segment, where each device must check the packet and process it only if it is addressed to them."
+  },
+  {
+    "id": "cn_u1_q8",
+    "unit": "Unit 1",
+    "question": "What are the distinct roles of edge and core networks?",
+    "answer": "Edge networks provide connectivity for end devices and serve as the entry point to larger infrastructures, such as residential or enterprise access networks. Core networks function as the high-speed backbone, providing reliable connections and enabling long-distance data transfer between different access networks."
+  },
+  {
+    "id": "cn_u1_q9",
+    "unit": "Unit 1",
+    "question": "Define the function of the presentation layer in the OSI model.",
+    "answer": "The presentation layer is responsible for providing independence to the application processes from differences in data representation. It handles tasks such as data format translation, encryption for security, and data compression to improve transmission efficiency."
+  },
+  {
+    "id": "cn_u1_q10",
+    "unit": "Unit 1",
+    "question": "What is the primary objective of a protocol architecture?",
+    "answer": "The primary objective of a protocol architecture is to break the complex task of communication between systems into subtasks, each implemented as a separate layer. This modular approach ensures that changes in one layer do not require changes in other layers, facilitating easier standardization and interoperability."
+  },
+  {
+    "id": "cn_u2_q1",
+    "unit": "Unit 2",
+    "question": "What is the main difference between fiber optic cables and twisted pair cables in terms of data transmission?",
+    "answer": "Fiber optic cables transmit data as light pulses through thin strands of glass, offering extremely high bandwidth and immunity to electromagnetic interference over long distances. Twisted pair cables use electrical signals over copper wires, which are less expensive and easier to install but more susceptible to interference and signal attenuation."
+  },
+  {
+    "id": "cn_u2_q2",
+    "unit": "Unit 2",
+    "question": "Why is CSMA/CD not suitable for wireless ad hoc networks?",
+    "answer": "CSMA/CD is designed for wired environments where nodes can detect collisions by sensing the signal strength on the medium during transmission. In wireless ad hoc networks, the hidden terminal problem and the nature of radio propagation prevent nodes from reliably detecting collisions, making CSMA/CA a more appropriate choice."
+  },
+  {
+    "id": "cn_u2_q3",
+    "unit": "Unit 2",
+    "question": "Explain why the IEEE 802.11 frame uses four address fields.",
+    "answer": "Three address fields are primarily needed in infrastructure mode to move network-layer datagrams between a wireless station, an access point, and a router interface. The fourth address field is specifically reserved for use in ad hoc mode when access points forward frames directly to each other."
+  },
+  {
+    "id": "cn_u2_q4",
+    "unit": "Unit 2",
+    "question": "Distinguish between the Logical Link Control (LLC) and Media Access Control (MAC) sublayers of the Data Link Layer.",
+    "answer": "The LLC sublayer provides error checking, flow control, and manages data exchange between devices, serving as an interface to higher layers. The MAC sublayer is responsible for controlling how devices on a shared medium gain access to the network and handles physical addressing using MAC addresses."
+  },
+  {
+    "id": "cn_u2_q5",
+    "unit": "Unit 2",
+    "question": "Define the stop-and-wait flow control mechanism.",
+    "answer": "Stop-and-wait flow control is a simple mechanism where a sender transmits a single frame and must wait for an acknowledgment from the receiver before sending the next frame. This prevents the receiver from being overwhelmed by data sent faster than it can be processed."
+  },
+  {
+    "id": "cn_u2_q6",
+    "unit": "Unit 2",
+    "question": "What is the purpose of bit stuffing in data link protocols?",
+    "answer": "Bit stuffing is used to ensure data transparency by preventing a specific bit pattern, such as a frame flag, from appearing within the data field. In HDLC, the transmitter inserts a zero bit after every sequence of five consecutive ones, and the receiver removes it to maintain synchronization."
+  },
+  {
+    "id": "cn_u2_q7",
+    "unit": "Unit 2",
+    "question": "How does a Cyclic Redundancy Check (CRC) identify transmission errors?",
+    "answer": "A CRC uses a predetermined divisor polynomial to perform binary division on the data bits, appending the remainder to the frame as a Check Sequence. The receiver performs the same division; if the remainder is zero, the data is assumed correct, otherwise an error is detected."
+  },
+  {
+    "id": "cn_u2_q8",
+    "unit": "Unit 2",
+    "question": "What is the significance of the Hamming distance in error correction?",
+    "answer": "The Hamming distance is the number of bit positions in which two binary sequences differ. In error correction, codewords are designed with a minimum Hamming distance to ensure that a certain number of bit flips can be detected and corrected by mapping an invalid sequence to the nearest valid codeword."
+  },
+  {
+    "id": "cn_u2_q9",
+    "unit": "Unit 2",
+    "question": "Describe the basic operation of a Token Ring protocol.",
+    "answer": "Token Ring is a LAN protocol where a small frame called a token circulates in a closed loop through all stations. Only the station holding the token has permission to transmit data, which prevents collisions by ensuring only one node can use the medium at a time."
+  },
+  {
+    "id": "cn_u2_q10",
+    "unit": "Unit 2",
+    "question": "What is a Virtual Local Area Network (VLAN) and its primary benefit?",
+    "answer": "A VLAN is a logical segmentation of a physical LAN into multiple isolated broadcast domains using switch management software. Its primary benefits include improved security by isolating sensitive traffic and reduced broadcast traffic, which enhances overall network performance."
+  },
+  {
+    "id": "cn_u3_q1",
+    "unit": "Unit 3",
+    "question": "Why is the IPv6 header size not increased proportionately with the rate of increase of its address bits compared with IPv4?",
+    "answer": "Although IPv6 addresses are four times larger than IPv4 addresses, the IPv6 header was redesigned to be simpler and more efficient by removing or making optional many of the IPv4 fields. This streamlined format improves processing efficiency at routers and keeps the base header size relatively small despite the large address space."
+  },
+  {
+    "id": "cn_u3_q2",
+    "unit": "Unit 3",
+    "question": "Define Network Address Translation (NAT) and its primary purpose.",
+    "answer": "NAT is a technique that allows multiple devices on a private network to share a single public IP address for external communication. Its primary purposes are to conserve the limited pool of public IPv4 addresses and to enhance security by hiding the internal network structure from the public Internet."
+  },
+  {
+    "id": "cn_u3_q3",
+    "unit": "Unit 3",
+    "question": "Explain how tunneling is used in the transition from IPv4 to IPv6.",
+    "answer": "Tunneling is a transition mechanism where an IPv6 packet is encapsulated as the payload within an IPv4 datagram. This allows IPv6 nodes to communicate with each other across existing network infrastructures that only support IPv4 by treating the IPv4 path as a simple link-layer connection."
+  },
+  {
+    "id": "cn_u3_q4",
+    "unit": "Unit 3",
+    "question": "Compare datagram switching and virtual circuit switching in terms of routing.",
+    "answer": "In datagram switching, each packet is routed independently based on the destination address and may follow different paths to the receiver. In virtual circuit switching, a preplanned route is established before any data is sent, and all packets in that session follow the same fixed path through the network."
+  },
+  {
+    "id": "cn_u3_q5",
+    "unit": "Unit 3",
+    "question": "What is the role of the Internet Control Message Protocol (ICMP)?",
+    "answer": "ICMP is used by hosts and routers to communicate network-layer information, such as error reporting and diagnostic queries. It can notify a sender if a destination is unreachable or if a packet's time-to-live has expired, helping to troubleshoot network connectivity issues."
+  },
+  {
+    "id": "cn_u3_q6",
+    "unit": "Unit 3",
+    "question": "Distinguish between Link-State and Distance-Vector routing algorithms.",
+    "answer": "Link-State algorithms require each router to have global knowledge of the network topology and use Dijkstra's algorithm to calculate shortest paths. Distance-Vector algorithms are decentralized, with routers only exchanging cost estimates to all known destinations with their immediate neighbors in an iterative process."
+  },
+  {
+    "id": "cn_u3_q7",
+    "unit": "Unit 3",
+    "question": "What is the primary function of the Border Gateway Protocol (BGP)?",
+    "answer": "BGP is the de facto standard inter-domain routing protocol used to exchange reachability information between different autonomous systems on the Internet. It is a path-vector protocol that allows organizations to implement complex routing policies based on business and security requirements."
+  },
+  {
+    "id": "cn_u3_q8",
+    "unit": "Unit 3",
+    "question": "Explain the benefit of Classless Inter-Domain Routing (CIDR).",
+    "answer": "CIDR replaces the rigid class-based IP addressing system with a more flexible approach that allows for variable-length subnet masks. This significantly reduces the size of global routing tables through route aggregation and slows the exhaustion of the IPv4 address space by allocating addresses more efficiently."
+  },
+  {
+    "id": "cn_u3_q9",
+    "unit": "Unit 3",
+    "question": "Describe the workflow of the Dynamic Host Configuration Protocol (DHCP).",
+    "answer": "DHCP is a client-server protocol that automates IP address assignment through a four-step process: discovery, offer, request, and acknowledgment. A newly arriving host broadcasts a discovery message, receives offers from servers, requests a specific address, and finally receives an acknowledgment confirming the configuration."
+  },
+  {
+    "id": "cn_u3_q10",
+    "unit": "Unit 3",
+    "question": "What is a subnet mask and how is it used in IP addressing?",
+    "answer": "A subnet mask is a 32-bit value used to distinguish between the network portion and the host portion of an IP address. By performing a bitwise AND operation between an IP address and its subnet mask, a router can determine the specific subnetwork to which a host belongs."
+  },
+  {
+    "id": "cn_u4_q1",
+    "unit": "Unit 4",
+    "question": "State the functionality of UDP at the receiver host.",
+    "answer": "At the receiver host, the User Datagram Protocol (UDP) performs basic demultiplexing by using the destination port number in the segment header to deliver data to the correct application process. It also optionally verifies data integrity using a checksum, but it does not provide any reordering of segments or recovery from packet loss."
+  },
+  {
+    "id": "cn_u4_q2",
+    "unit": "Unit 4",
+    "question": "How does TCP ensure reliability with an unreliable lower layer service?",
+    "answer": "TCP ensures reliability by using sequence numbers to order segments and detect gaps, along with a positive acknowledgment scheme that requires the receiver to confirm successful delivery. If a sender does not receive an acknowledgment before a timer expires, it retransmits the missing data until a successful transfer is confirmed."
+  },
+  {
+    "id": "cn_u4_q3",
+    "unit": "Unit 4",
+    "question": "Why does the File Transfer Protocol (FTP) use two separate port numbers?",
+    "answer": "FTP uses two separate TCP connections to manage the transfer: one for control and one for data. Port 21 is used for the control connection to exchange commands and passwords, while Port 20 is used for the data connection to transfer the actual file contents without the overhead of control signaling."
+  },
+  {
+    "id": "cn_u4_q4",
+    "unit": "Unit 4",
+    "question": "Why is HTTP designed as a stateless protocol and how can state information be added?",
+    "answer": "HTTP is designed as a stateless protocol to simplify server design and improve performance by treating each request independently without maintaining information about previous interactions. State information can be added using cookie technology, where a server sends a unique identifier to be stored by the client's browser and returned with subsequent requests."
+  },
+  {
+    "id": "cn_u4_q5",
+    "unit": "Unit 4",
+    "question": "What is the primary difference between TCP and UDP segment headers?",
+    "answer": "The primary difference is the amount of overhead and control information; a TCP header is at least 20 bytes long to support reliability, flow control, and connection management. A UDP header is only 8 bytes long and provides only the essential fields needed for port addressing, length, and data integrity verification."
+  },
+  {
+    "id": "cn_u4_q6",
+    "unit": "Unit 4",
+    "question": "Describe the three-way handshake process for TCP connection establishment.",
+    "answer": "TCP establishes a connection using three segments: the client sends a SYN segment with an initial sequence number, the server responds with a SYN-ACK segment acknowledging the client and providing its own sequence number, and the client returns an ACK segment. This process ensures that both sides have initialized sequence numbers and are ready to exchange data."
+  },
+  {
+    "id": "cn_u4_q7",
+    "unit": "Unit 4",
+    "question": "Explain the concept of name resolution in the Domain Name System (DNS).",
+    "answer": "Name resolution is the process of translating a human-friendly domain name into a machine-readable IP address. It involves a resolver querying a hierarchy of name servers, starting from a local server and potentially moving to root, top-level domain, and authoritative servers to find the correct mapping."
+  },
+  {
+    "id": "cn_u4_q8",
+    "unit": "Unit 4",
+    "question": "How does the TCP congestion control mechanism respond to a detected timeout?",
+    "answer": "When a timeout occurs, TCP interprets it as a sign of network congestion and immediately reduces its transmission rate by setting the congestion window size to one segment. It also enters the slow start phase, where the window size grows exponentially until it reaches a threshold, after which it grows linearly to cautiously probe for available bandwidth."
+  },
+  {
+    "id": "cn_u4_q9",
+    "unit": "Unit 4",
+    "question": "What is the role of the Multi-Purpose Internet Mail Extension (MIME) in electronic mail?",
+    "answer": "MIME is a set of specifications that extends the basic SMTP protocol to allow for the transmission of non-ASCII data, such as images, audio, and video, in e-mail messages. It defines new header fields that describe the type and encoding of the message body, enabling multimedia content to be transferred reliably across mail systems."
+  },
+  {
+    "id": "cn_u4_q10",
+    "unit": "Unit 4",
+    "question": "Define the term 'socket' in the context of network applications.",
+    "answer": "A socket is a software interface that serves as an endpoint for communication between application processes on different hosts. It acts like a door through which an application shoves data into the underlying network infrastructure for transport to a corresponding socket at the destination host."
+  },
+  {
+    "id": "cn_u5_q1",
+    "unit": "Unit 5",
+    "question": "State the significance of the Structure of Management Information (SMI) in network management.",
+    "answer": "SMI is a data description language used to define the syntax and semantics of management information stored in a device's database. It ensures that the management data is represented in a well-defined and unambiguous manner, which is essential for interoperability between management stations and agents from different vendors."
+  },
+  {
+    "id": "cn_u5_q2",
+    "unit": "Unit 5",
+    "question": "What is the role of the Management Information Base (MIB) in network management?",
+    "answer": "An MIB is a collection of managed objects that represent various resources and parameters within a network device, such as error counters or configuration settings. It serves as a standard access point through which a management station can monitor and control the agent by reading or writing the values of these objects."
+  },
+  {
+    "id": "cn_u5_q3",
+    "unit": "Unit 5",
+    "question": "Compare a traditional switch with an SDN-enabled switch in terms of handling forwarding decisions.",
+    "answer": "In traditional switches, the forwarding logic is implemented monolithically within each device using a fixed destination-based forwarding table. In an SDN-enabled switch, the control plane is centralized at a remote controller that computes and installs flow tables, allowing for more flexible, generalized forwarding based on various header fields."
+  },
+  {
+    "id": "cn_u5_q4",
+    "unit": "Unit 5",
+    "question": "List some open source tools used for network monitoring and management.",
+    "answer": "Several open source tools are available to help network administrators analyze and troubleshoot network behavior. Examples mentioned in the reference material include Wireshark for packet sniffing, Ethereal for protocol analysis, and simulation packages like cnet for modeling network configurations."
+  },
+  {
+    "id": "cn_u5_q5",
+    "unit": "Unit 5",
+    "question": "What are the key components of the SNMP network management framework?",
+    "answer": "The framework consists of four main elements: the managing server, the managed devices, the management agents running on those devices, and the network management protocol (SNMP). The managing server uses the protocol to interact with agents to query or set data in the device's management information base."
+  },
+  {
+    "id": "cn_u5_q6",
+    "unit": "Unit 5",
+    "question": "Explain the purpose of an SNMP trap message.",
+    "answer": "An SNMP trap is an unsolicited message sent by a management agent to the managing server to notify it of a significant or exceptional event. Traps are used for asynchronous reporting of conditions like link failures or authentication errors, allowing the network manager to respond quickly to problems without constant polling."
+  },
+  {
+    "id": "cn_u5_q7",
+    "unit": "Unit 5",
+    "question": "Describe the relationship between the NETCONF protocol and the YANG data modeling language.",
+    "answer": "YANG is a modeling language used to precisely specify the structure and constraints of network configuration and operational data. The NETCONF protocol provides the messaging mechanism to transport and manipulate this YANG-defined data between a managing server and network devices using a secure remote procedure call paradigm."
+  },
+  {
+    "id": "cn_u5_q8",
+    "unit": "Unit 5",
+    "question": "What is the function of the 'northbound' API in an SDN controller?",
+    "answer": "The northbound API provides an interface that allows network-control applications to interact with the SDN controller to read and write network state. This enables developers to program complex network behaviors, such as routing or load balancing, by abstracting the low-level details of the underlying network hardware."
+  },
+  {
+    "id": "cn_u5_q9",
+    "unit": "Unit 5",
+    "question": "How does the Wireshark tool facilitate network management and analysis?",
+    "answer": "Wireshark is a packet sniffer that passively captures and displays the contents of protocol messages being exchanged between networked devices. It allows administrators to observe the sequence of messages in real time, helping them to debug protocol operation, verify configurations, and identify performance bottlenecks."
+  },
+  {
+    "id": "cn_u5_q10",
+    "unit": "Unit 5",
+    "question": "What is fault management in the context of network management?",
+    "answer": "Fault management includes the set of facilities that enable network managers to detect, isolate, and correct abnormal operations in the network. It involves monitoring device status, analyzing error logs to identify the root cause of failures, and coordinating recovery efforts to restore service as quickly as possible."
+  }
+]
